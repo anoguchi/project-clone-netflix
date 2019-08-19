@@ -1,0 +1,69 @@
+.footer {
+    max-width: 75%;
+    margin: 2rem auto;
+    overflow: auto;
+
+    &__top {
+        margin-bottom: 1.5rem;
+    }
+
+    &__cols {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 2rem;
+
+        & li {
+            line-height: 1.9;
+        }
+
+        & a {
+            color: $colorDarkGray;
+            font-size: 0.8125rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__language {
+        width: 150px;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        &-select {
+            display: block;
+            width: inherit;
+            font-size: 0.8rem;
+            padding: 1.4em 3em;
+            color: $colorDarkGray;
+            background-color: $colorBlack;
+            border: 0.5px solid $colorDarkLight;
+            border-radius: .2em;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+
+        &-icon-01 {
+            position: absolute;
+            z-index: 0;
+            top: 50%;
+            left: 20px;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        &-icon-02 {
+            position: absolute;
+            top: 50%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+    }
+}
+
+.teste {
+    padding: 60px;
+}

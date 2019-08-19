@@ -1,0 +1,28 @@
+.tabs {
+    background-color: $colorDark;
+    border-bottom: 3px solid $colorDarkLight;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &>div {
+        height: 130px;
+    }
+
+    &--selected {
+        border-bottom: 4px solid $colorPrimary;
+        color: $colorWhite;
+    }
+
+    &__item:hover {
+        color: $colorWhite;
+        cursor: pointer;
+    }
+
+}

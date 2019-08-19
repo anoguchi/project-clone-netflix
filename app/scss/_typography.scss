@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: optimizelegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    background: $colorBlack;
+    color: $colorDarkGray;
+}
+
+.headline {
+    font-size: 2rem;
+    color: $colorWhite;
+
+    &--big {
+        font-size: 5rem;
+    }
+
+    &--small {
+        font-size: 1.125rem;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--lighter {
+        font-weight: lighter;
+    }
+
+    &--margin {
+
+        margin: 1rem 0;
+
+        &__bottom {
+            margin-bottom: 2.8rem;
+        }
+    }
+}
+
+.text-content {
+    line-height: 1.2;
+
+    &--big {
+        font-size: 2rem;
+    }
+
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--lighter {
+        font-weight: lighter;
+    }
+
+    &--margin {
+        margin: 0.8rem 0;
+
+        &__top {
+            margin-top: 1.5rem;
+
+            &--small {
+                margin-top: 1rem;
+            }
+        }
+
+        &__bottom {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+.show-tab-content {
+    display: block !important;
+}
+
+.tab-content__item {
+    margin-bottom: 8rem;
+}
+
+.tab-content__1-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-content__2-top {
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.tab-content__2-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tab-content__3-top {
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    color: $colorWhite;
+    padding: 0.8rem;
+}
+
+.table tr td {
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+
+.table tr td:first-child {
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: $colorDark;
+}
